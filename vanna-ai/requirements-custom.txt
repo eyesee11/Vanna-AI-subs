@@ -1,9 +1,0 @@
-# Custom Vanna AI Server - Minimal Requirements
-# No Vanna package needed - we use custom FastAPI + Groq integration
-
-fastapi
-uvicorn[standard]
-python-dotenv
-psycopg2-binary
-requests
-pydantic
