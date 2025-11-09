@@ -1,4 +1,4 @@
-# Buchhaltung Analytics Platform 🚀
+# Analytics Platform (Rocket Emoji) (Just for an internship)
 
 A full-stack invoice analytics platform with AI-powered data querying capabilities. Features a pixel-perfect dashboard UI, real-time data processing, and natural language SQL generation.
 
