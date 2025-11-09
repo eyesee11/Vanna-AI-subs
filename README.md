@@ -68,7 +68,6 @@ A full-stack invoice analytics platform with AI-powered data querying capabiliti
 
 ### Installation
 
-
 **Quick Setup:**
 
 1. **Setup PostgreSQL:**
@@ -201,7 +200,6 @@ app.use(
 - **payments** - Payment records and history
 
 ## 📚 Documentation
-
 
 ## 🚢 Deployment
 
