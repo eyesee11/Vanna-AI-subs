@@ -18,7 +18,7 @@ router.get("/", async (req: Request, res: Response) => {
       },
     });
 
-    const result = categorySpend.map((item) => ({
+    const result = categorySpend.map((item: any) => ({
       name: item.category || "Uncategorized",
       value: item._sum.totalAmount || 0,
     }));
