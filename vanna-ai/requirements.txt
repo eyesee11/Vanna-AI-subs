@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+vanna[fastapi,httpx,postgres] @ git+https://github.com/vanna-ai/vanna.git@v2
+requests
+python-dotenv
+psycopg2-binary
+pinecone
