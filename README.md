@@ -68,7 +68,6 @@ A full-stack invoice analytics platform with AI-powered data querying capabiliti
 
 ### Installation
 
-**📖 For detailed step-by-step instructions, see [STEP_BY_STEP_GUIDE.md](./STEP_BY_STEP_GUIDE.md)**
 
 **Quick Setup:**
 
@@ -110,8 +109,6 @@ npm run dev
 
 ### 🤖 Optional: Setup AI Chat (Vanna AI)
 
-See [STEP_BY_STEP_GUIDE.md](./STEP_BY_STEP_GUIDE.md) Phase 5 for complete instructions.
-
 ## 📁 Project Structure
 
 ```
@@ -133,9 +130,6 @@ Flowbitai/
 │   └── requirements.txt
 ├── public/
 │   └── Analytics_Test_Data.json  ⚠️ ADD THIS FILE
-├── STEP_BY_STEP_GUIDE.md  ⭐ Start here
-├── QUICK_START.md
-└── PROJECT_STATUS.md
 ```
 
 See [PROJECT_STATUS.md](./PROJECT_STATUS.md) for detailed file organization.
@@ -208,10 +202,6 @@ app.use(
 
 ## 📚 Documentation
 
-- **[STEP_BY_STEP_GUIDE.md](./STEP_BY_STEP_GUIDE.md)** - Complete implementation guide (⭐ START HERE)
-- **[QUICK_START.md](./QUICK_START.md)** - Quick reference commands
-- **[PROJECT_STATUS.md](./PROJECT_STATUS.md)** - Current project status
-- **[README-FULLSTACK.md](./README-FULLSTACK.md)** - Detailed architecture docs
 
 ## 🚢 Deployment
 
