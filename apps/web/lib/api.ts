@@ -1,6 +1,8 @@
 // API Client for Backend Endpoints
 // Base URL from environment variable
-const API_BASE = (process.env.NEXT_PUBLIC_API_BASE || "http://localhost:3001").replace(/\/$/, "");
+const API_BASE = (
+  process.env.NEXT_PUBLIC_API_BASE || "http://localhost:3001"
+).replace(/\/$/, "");
 
 // Types for API responses
 export interface StatsResponse {
