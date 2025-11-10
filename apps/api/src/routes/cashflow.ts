@@ -31,7 +31,7 @@ router.get("/", async (req: Request, res: Response) => {
     ];
 
     const cashflowData = await Promise.all(
-      ranges.map(async (range) => {
+      ranges.map(async (range: any) => {
         const where: any = {
           status: { in: ["pending", "overdue"] },
           dueDate: {

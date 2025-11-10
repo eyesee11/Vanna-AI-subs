@@ -20,7 +20,7 @@ router.get("/top10", async (req: Request, res: Response) => {
     });
 
     const vendorsWithDetails = await Promise.all(
-      topVendors.map(async (item) => {
+      topVendors.map(async (item: any) => {
         const vendor = await prisma.vendor.findUnique({
           where: { id: item.vendorId },
         });
