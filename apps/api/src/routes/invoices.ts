@@ -51,7 +51,7 @@ router.get("/", async (req: Request, res: Response) => {
       prisma.invoice.count({ where }),
     ]);
 
-    const formattedInvoices = invoices.map((invoice) => ({
+    const formattedInvoices = invoices.map((invoice: any) => ({
       id: invoice.id,
       invoiceNumber: invoice.invoiceNumber,
       vendor: invoice.vendor.name,
