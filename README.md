@@ -145,9 +145,11 @@ See [PROJECT_STATUS.md](./PROJECT_STATUS.md) for detailed file organization.
 | `/invoices`       | GET    | Paginated invoices list  |
 | `/chat-with-data` | POST   | Natural language queries |
 
+\n+## 🗣️ Chat with Data Workflow\n+\n+### How it Works\n+1. **User Input:** The user enters a natural language question in the chat box (e.g., "Show me last month's top vendors").\n+2. **Request Handling:** The frontend sends the query to the backend `/chat-with-data` endpoint.\n+3. **AI Query Processing:** The backend uses Vanna AI (FastAPI, Groq, ChromaDB) to interpret the question and generate a relevant SQL query.\n+4. **Database Query:** The generated SQL is executed against the PostgreSQL database.\n+5. **Response:** The backend returns the results to the frontend, which displays them in the chat window and/or updates dashboard components.\n+\n+#### Example\n+User: "What was the total spend in Q2?"\n+System: "Total spend in Q2 was $45,000."\n+\n+## 🖥️ Dashboard Interactions\n+\n+### Dashboard Loading & Interactivity\n+1. **Initial Load:** On login, the dashboard fetches summary stats and recent data from the backend API endpoints (`/stats`, `/invoice-trends`, etc.). Charts and tables are populated with the latest data.\n+2. **Chart Updates:** When filters (date range, category, vendor) are changed, the frontend sends updated requests to relevant endpoints. Charts (e.g., invoice trends, category spend) update dynamically based on the filtered data.\n+3. **Table Filters & Search:** Tables (e.g., invoices, vendors) support search and filter options. User input triggers frontend filtering or backend queries for large datasets.\n+4. **Chat Query Workflow:** User submits a question in the chat panel. The workflow follows the steps in the 'Chat with Data' section above, updating dashboard views if relevant.\n+\n+#### Example\n+Changing the date filter updates all charts and tables to reflect the selected period. Searching for a vendor in the table instantly filters results.\n
+
 ## � CORS & Browser Troubleshooting
 
-If you ever get 404 errors in the browser for API endpoints (but everything works in Postman or terminal), it's probably just a CORS config or browser cache thing—don't panic!
+If you ever get 404 errors in the browser for API endpoints (but everything works in Postman or terminal), it's probably just a CORS config or browser cache thing!
 
 **Solution:**
 
