@@ -5,11 +5,9 @@
   "packageManager": "npm@10.9.0",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && echo 'API ready for Vercel'",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "vercel-build": "prisma generate",
-    "postinstall": "cd apps/api && prisma generate"
+    "lint": "next lint"
   },
   "dependencies": {
     "@prisma/client": "^6.19.0",
